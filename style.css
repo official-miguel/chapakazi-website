@@ -1,4 +1,4 @@
-:root{--bg:#f7f3ea;--card:#fcfaf4;--ink:#2d1b12;--mut:#72665e;--line:#e6dfd2;--soft:#efe9db;--g:#1a9a4a;--gd:#127a39;--yel:#ffc93c;--red:#d9412b;--dark:#241711;
+:root{color-scheme:only light;--bg:#f7f3ea;--card:#fcfaf4;--ink:#2d1b12;--mut:#72665e;--line:#e6dfd2;--soft:#efe9db;--g:#1a9a4a;--gd:#127a39;--yel:#ffc93c;--red:#d9412b;--dark:#241711;
 --sans:"Bricolage Grotesque",system-ui,sans-serif;--serif:"Fraunces",Georgia,serif;--mono:"DM Mono",ui-monospace,monospace}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
