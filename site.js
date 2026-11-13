@@ -1,5 +1,5 @@
 // Fill these in before publishing.
-var APP_URL = "";        // e.g. "https://app.chapakazi.co.ke"
+var APP_URL = "https://chapakazi.vercel.app"; // switch to https://app.chapabiz.co.ke once that domain is live
 var WHATSAPP = "254182319029"; // digits only, country code first (same number as bidiischools.co.ke)
 
 document.querySelectorAll("[data-app]").forEach(function (a) {
