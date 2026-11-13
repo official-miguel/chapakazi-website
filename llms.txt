@@ -1,0 +1,36 @@
+# Chapa Biz
+
+> Chapa Biz is a business ledger app for small shops (dukas) in Kenya. It replaces the paper notebook: the owner records sales, expenses, stock and customer debts on a phone, in English or Swahili, and it keeps working with no internet. Made in Kenya by Trillionaire Designs.
+
+## Key facts
+
+- What it is: an installable web app (PWA) for Android and iPhone. No Play Store or App Store needed; it installs from the web page.
+- Who it is for: small shop owners and their workers in Kenya (retail shops, kiosks, mama mbogas, hardware, salons and similar small businesses).
+- Languages: English and Swahili, including voice entry that understands Swahili, English and common Sheng number words.
+- Works offline: everything is saved on the phone first, then backed up and synced to a secure server when online.
+- Price (Kenyan shillings, all features included in every plan): KSh 50 per day, KSh 300 per week, KSh 1,200 per month (about KSh 40 a day).
+- How to pay and get started: message on WhatsApp +254 182 319 029 (0182319029).
+- Website: https://chapabiz.co.ke/
+
+## Features
+
+- Sales and expenses: day-by-day list; every edit keeps its full history, nothing is silently changed.
+- Stock: items in any unit, stock drops with each sale, low-stock warnings, buying prices visible to owner only.
+- Debts: credit by named customer, part-payments, credit limits, one-tap WhatsApp or SMS payment reminders.
+- Voice entry: say a sale in Swahili or English, confirm, then save.
+- Workers: each worker has their own 4-digit PIN and sees only their shop, never buying prices or profit.
+- Owner alerts: quiet notes when a worker lowers or deletes an amount late, or passes a credit limit.
+- Reports: profit, best sellers, busiest hours, slow movers, cash count at closing, and a business health report for a Sacco or bank loan application.
+- Suppliers: what you owe, restock ideas, drafted orders.
+- Multiple shops: one owner account can hold several businesses and compare them.
+
+## Frequently asked questions
+
+- Do I need internet? No. Chapa Biz saves on the phone first and syncs when back online.
+- Do I need a smartphone? Yes, any Android phone or iPhone with a browser.
+- Is my data safe? Records are stored on the phone and backed up to a secure server, with full edit history.
+- Can workers use it? Yes, with an invite code and their own PIN.
+
+## Pages
+
+- [Home, features, pricing and FAQ](https://chapabiz.co.ke/): everything above on one page.
