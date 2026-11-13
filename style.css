@@ -211,3 +211,5 @@ details p{color:var(--mut);margin-top:10px}
 }
 @media(max-width:520px){.mods{grid-template-columns:1fr}.amt{font-size:68px}.btn{width:100%}.toggle button{padding:10px 16px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal>*{opacity:1;transform:none}}
+.foot-tel{color:#fff;text-decoration:none;font-weight:500;border-bottom:1px solid rgba(255,255,255,.3)}
+.foot-tel:hover{border-color:var(--yel)}

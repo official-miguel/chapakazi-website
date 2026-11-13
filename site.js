@@ -1,6 +1,6 @@
 // Fill these in before publishing.
 var APP_URL = "";        // e.g. "https://app.chapakazi.co.ke"
-var WHATSAPP = "";       // digits only, e.g. "254712345678"
+var WHATSAPP = "254182319029"; // digits only, country code first (same number as bidiischools.co.ke)
 
 document.querySelectorAll("[data-app]").forEach(function (a) {
   if (APP_URL) a.href = APP_URL;
