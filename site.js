@@ -11,7 +11,7 @@ document.querySelectorAll("[data-install]").forEach(function (a) {
 });
 document.querySelectorAll("[data-wa]").forEach(function (a) {
   if (WHATSAPP) {
-    a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hi, I'd like to try Chapa Kazi");
+    a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hi, I'd like to try Chapa Biz");
     a.target = "_blank";
     a.rel = "noopener";
   }
