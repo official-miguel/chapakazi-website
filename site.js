@@ -50,7 +50,7 @@ links.addEventListener("click", function () {
 var PLANS = {
   day:   { kick: "PAY AS YOU GO", amt: "50",    per: "/ day",   note: "Pay only for the days you need." },
   week:  { kick: "SAVE KSH 50",   amt: "300",   per: "/ week",  note: "Save KSh 50 every week against daily." },
-  month: { kick: "BEST VALUE",    amt: "1,200", per: "/ month", note: "Just KSh 40 a day — save KSh 300 against daily." }
+  month: { kick: "BEST VALUE",    amt: "1,200", per: "/ month", note: "Just KSh 40 a day. Save KSh 300 against daily." }
 };
 var tabs = document.querySelectorAll(".toggle button");
 tabs.forEach(function (b) {
