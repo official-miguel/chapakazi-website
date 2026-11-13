@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapa Kazi — Business ledger for Kenyan shops</title>
+<meta name="description" content="Chapa Kazi replaces the notebook. Record sales, expenses, stock and customer debts on your phone — even with no internet. From KSh 50 a day.">
+<meta name="theme-color" content="#f7f3ea">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22.5z"/><path d="M4 19.5V4.5M9 7h7"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l3-2 2.5 2 2.5-2 2.5 2 2.5-2 3 2V2l-3 2-2.5-2-2.5 2-2.5-2L7 4z"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4"/></symbol>
+<symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+<symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 21h18"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 4.2a4 4 0 0 1 0 7.6M18 14.5a7 7 0 0 1 4 6.5"/></symbol>
+<symbol id="i-cash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h13v12H1zM14 8h4l4 4v4h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+<symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 20h.01M3 3l18 18"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10 21a2 2 0 0 0 4 0"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</defs></svg>
+
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash-in">
+    <div class="splash-logo"><img src="logo.svg" alt="" width="84" height="84"></div>
+    <p class="splash-t">Hustle smarter, not harder.</p>
+    <p class="mono splash-s"><b>CHAPA KAZI</b> · PREPARING YOUR SHOP</p>
+  </div>
+  <p class="splash-p">Powered by Trillionaire Designs</p>
+</div>
+
+<header class="nav-wrap">
+  <div class="nav">
+    <a class="brand" href="#top"><img src="logo.svg" alt="" width="34" height="34"><span>chapa<b>kazi</b></span></a>
+    <nav class="links" id="links">
+      <a href="#roles">Who it's for</a>
+      <a href="#modules">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#download">Download</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="login" data-app href="#pricing"><svg><use href="#i-lock"/></svg>Log in</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow mono">CHAPA KAZI — THE BUSINESS LEDGER FOR KENYAN SHOPS</p>
+      <h1>Chapa Kazi — your shop's money, <em>made simple.</em></h1>
+      <p class="lead">Chapa Kazi brings sales, expenses, stock and customer debts together on your phone, so you can see clearly where every shilling goes — even when the internet is gone.</p>
+      <div class="cta-row">
+        <a class="btn" href="#download">Get the app <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-line" href="#how">See how it works</a>
+        <a class="btn btn-line" data-wa href="#">Ask on WhatsApp</a>
+      </div>
+      <p class="mono tag">Built for Kenyan shops · English &amp; Swahili · Works offline</p>
+    </div>
+
+    <div class="phone-wrap" aria-hidden="true">
+      <div class="phone">
+        <div class="screen">
+          <div class="s-head"><div><small class="mono">OWNER VIEW</small><b>Good morning, Mama Njeri</b></div><span class="s-date mono">Tue · 14 May</span></div>
+          <div class="s-cards">
+            <div><small>Sales today</small><b>KSh 12,450</b></div>
+            <div><small>Expenses</small><b>KSh 3,200</b></div>
+            <div><small>Owed to you</small><b>KSh 8,900</b></div>
+            <div><small>Low stock</small><b>3 items</b></div>
+          </div>
+          <div class="s-row"><span>Unga 2kg × 4</span><b class="g">+ 940</b></div>
+          <div class="s-row"><span>Transport</span><b class="r">− 300</b></div>
+          <div class="s-row"><span>Kamau paid debt</span><b class="g">+ 500</b></div>
+          <div class="s-mic"><svg><use href="#i-mic"/></svg><span>“Niliuza maziwa tatu, mia mbili”</span></div>
+        </div>
+      </div>
+      <div class="float f1"><svg><use href="#i-bell"/></svg><span>Amount lowered after 6pm</span></div>
+      <div class="float f2"><svg><use href="#i-wifi"/></svg><span>Saved offline</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span class="mono">WORKS OFFLINE</span><span class="mono">SWAHILI &amp; ENGLISH</span><span class="mono">TALK INSTEAD OF TYPE</span><span class="mono">INSTALLS LIKE AN APP</span><span class="mono">CLOUD BACKUP</span><span class="mono">WORKER PINS</span>
+  <span class="mono">WORKS OFFLINE</span><span class="mono">SWAHILI &amp; ENGLISH</span><span class="mono">TALK INSTEAD OF TYPE</span><span class="mono">INSTALLS LIKE AN APP</span><span class="mono">CLOUD BACKUP</span><span class="mono">WORKER PINS</span>
+</div></div>
+
+<section class="sec" id="roles">
+  <div class="wrap">
+    <p class="eyebrow mono">A SMARTER SHOP DAY</p>
+    <h2>One shop. <em>Everyone sees their part.</em></h2>
+    <div class="grid3 reveal">
+      <article class="card"><div class="ic"><svg><use href="#i-eye"/></svg></div><p class="mono kicker">FOR THE OWNER</p><h3>See what needs your attention.</h3><p>Sales, profit, debts and quiet alerts when an amount is lowered or deleted late.</p></article>
+      <article class="card"><div class="ic"><svg><use href="#i-users"/></svg></div><p class="mono kicker">FOR THE WORKER</p><h3>Record fast. Own PIN.</h3><p>Tap or speak each sale. Workers see only their shop, never buying prices or profit.</p></article>
+      <article class="card"><div class="ic"><svg><use href="#i-card"/></svg></div><p class="mono kicker">FOR YOUR CUSTOMERS</p><h3>Polite reminders, one tap.</h3><p>Send a ready-written WhatsApp or SMS when a debt is due. No awkward conversations.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec soft story">
+  <div class="wrap narrow">
+    <h2>The notebook is a lot of pages. <em>Chapa Kazi helps you read the story.</em></h2>
+    <p class="sub">A shop is more than a till total. A torn page, a forgotten debt or a quiet loss at closing time can cost more than you think. Chapa Kazi keeps every entry, every edit and every customer in one safe place.</p>
+    <div class="trio">
+      <div><svg><use href="#i-book"/></svg><b>Nothing is lost</b><span>Saved on your phone first, then backed up.</span></div>
+      <div><svg><use href="#i-help"/></svg><b>Nothing is forgotten</b><span>Every debt tracked by customer.</span></div>
+      <div><svg><use href="#i-eye"/></svg><b>Nothing is hidden</b><span>Every edit keeps its full history.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <p class="eyebrow mono">HOW IT WORKS</p>
+    <h2>Three simple <em>moves.</em></h2>
+    <p class="sub">No complicated setup. Chapa Kazi turns shop activity into a clear next step.</p>
+    <div class="steps reveal">
+      <div class="step"><span class="num mono">01</span><h3>Add your shop</h3><p>Open it on your phone, add it to your home screen, and type your items and prices once.</p></div>
+      <div class="step"><span class="num mono">02</span><h3>Record as you sell</h3><p>Tap or just say it. Stock and debts update by themselves.</p></div>
+      <div class="step"><span class="num mono">03</span><h3>Do the next right thing</h3><p>Restock, follow up a debt, count the cash — with the numbers in front of you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="modules">
+  <div class="wrap">
+    <p class="eyebrow mono on-dark">THE CONNECTED SHOP</p>
+    <h2>The complete ledger <em>for your shop.</em></h2>
+    <p class="sub on-dark">Everything in one place instead of notebook, calculator and memory.</p>
+    <div class="mods reveal">
+      <div class="mod"><svg><use href="#i-receipt"/></svg><b>Sales &amp; expenses</b><span>A clear day-by-day list. Edits keep history.</span></div>
+      <div class="mod"><svg><use href="#i-box"/></svg><b>Stock</b><span>Any unit. Drops with each sale. Low-stock warnings.</span></div>
+      <div class="mod"><svg><use href="#i-card"/></svg><b>Debts</b><span>Credit, part-payments, limits and reminders.</span></div>
+      <div class="mod"><svg><use href="#i-mic"/></svg><b>Voice entry</b><span>Say it in Swahili or English. Confirm, then save.</span></div>
+      <div class="mod"><svg><use href="#i-trend"/></svg><b>Profit &amp; trends</b><span>Best sellers, busiest hours, slow movers.</span></div>
+      <div class="mod"><svg><use href="#i-users"/></svg><b>Workers</b><span>Own PIN, own shop, no profit view.</span></div>
+      <div class="mod"><svg><use href="#i-cash"/></svg><b>Cash count</b><span>Count at closing, see if it matches the books.</span></div>
+      <div class="mod"><svg><use href="#i-truck"/></svg><b>Suppliers</b><span>What you owe, restock ideas, drafted orders.</span></div>
+      <div class="mod"><svg><use href="#i-bank"/></svg><b>Health report</b><span>A clean report for a Sacco or bank loan.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="voice">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow mono">TALK TO YOUR LEDGER</p>
+      <h2>Say the sale. <em>It's recorded.</em></h2>
+      <p class="sub left">Hands full at the counter? Just speak in Swahili, English or Sheng. Chapa Kazi understands your items, your customers and your numbers, then reads it back so you stay in charge.</p>
+      <ul class="ticks">
+        <li><svg><use href="#i-check"/></svg>Understands your own items and customers</li>
+        <li><svg><use href="#i-check"/></svg>Confirms before saving</li>
+        <li><svg><use href="#i-check"/></svg>Learns the words you use</li>
+      </ul>
+    </div>
+    <div class="chat" aria-hidden="true">
+      <p class="mono chat-h"><svg><use href="#i-mic"/></svg>VOICE ENTRY</p>
+      <div class="bub you">“Niliuza sukari mbili, mia tatu”</div>
+      <div class="bub bot">Sukari × 2, KSh 300, cash. Save this sale?</div>
+      <div class="bub you">“Ndiyo”</div>
+      <div class="bub bot ok"><svg><use href="#i-check"/></svg>Saved. Sukari stock: 18 left.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dl" id="download">
+  <div class="wrap">
+    <div class="dl-box">
+      <div class="dl-main">
+        <p class="eyebrow mono on-dark">GET THE APP</p>
+        <h2>Download Chapa Kazi <em>in seconds.</em></h2>
+        <p class="sub on-dark">No Play Store. No big download. Press the button and Chapa Kazi installs on your phone like any other app, and works offline.</p>
+        <a class="btn btn-yel" data-install href="#download" id="dl-btn"><svg><use href="#i-download"/></svg> Download the app</a>
+        <p class="mono dl-note">FREE TO INSTALL · ANDROID &amp; IPHONE</p>
+      </div>
+      <div class="dl-steps">
+        <div class="dl-card" id="dl-android">
+          <p class="mono kicker">ANDROID · CHROME</p>
+          <ol>
+            <li>Tap <b>Download the app</b> above.</li>
+            <li>If no install box appears, tap the <b>⋮ menu</b> at the top right of Chrome.</li>
+            <li>Choose <b>Install app</b> or <b>Add to Home screen</b>.</li>
+            <li>Open <b>Chapa Kazi</b> from your home screen.</li>
+          </ol>
+        </div>
+        <div class="dl-card" id="dl-ios">
+          <p class="mono kicker">IPHONE · SAFARI</p>
+          <ol>
+            <li>Tap <b>Download the app</b> above, in Safari.</li>
+            <li>Tap the <b>Share</b> button at the bottom.</li>
+            <li>Choose <b>Add to Home Screen</b>.</li>
+            <li>Open <b>Chapa Kazi</b> from your home screen.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec soft" id="pricing">
+  <div class="wrap narrow center">
+    <p class="eyebrow mono">PRICING THAT STAYS SMALL</p>
+    <h2>Built around your cash flow, <em>not ours.</em></h2>
+    <p class="sub">Pay by the day, week or month. Every plan has everything.</p>
+
+    <div class="toggle" role="tablist">
+      <button role="tab" data-plan="day">Daily</button>
+      <button role="tab" data-plan="week">Weekly</button>
+      <button role="tab" data-plan="month" class="on">Monthly</button>
+    </div>
+
+    <div class="price-box">
+      <p class="mono kicker" id="p-kick">BEST VALUE</p>
+      <div class="price"><span class="cur">KSh</span><span class="amt" id="p-amt">1,200</span><span class="per" id="p-per">/ month</span></div>
+      <p class="price-note" id="p-note">Just KSh 40 a day — save KSh 300 against daily.</p>
+      <ul class="ticks left">
+        <li><svg><use href="#i-check"/></svg>Sales, expenses, stock and debts</li>
+        <li><svg><use href="#i-check"/></svg>Voice entry in Swahili and English</li>
+        <li><svg><use href="#i-check"/></svg>Workers with PINs and owner alerts</li>
+        <li><svg><use href="#i-check"/></svg>Profit, best sellers and health report</li>
+        <li><svg><use href="#i-check"/></svg>Works offline, backs up and syncs phones</li>
+      </ul>
+      <a class="btn btn-block" data-app href="#">Get started <svg><use href="#i-arrow"/></svg></a>
+      <p class="fine">One extra sale a day more than pays for it.</p>
+    </div>
+    <p class="mono compare"><span>DAILY KSh 50</span><span>WEEKLY KSh 300</span><span>MONTHLY KSh 1,200</span></p>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap narrow">
+    <p class="eyebrow mono">QUESTIONS</p>
+    <h2>Shop owners <em>ask.</em></h2>
+    <div class="faq">
+    <details><summary>Do I need internet?</summary><p>No. Chapa Kazi saves everything on your phone first, so you can keep selling offline. When you're back online it backs up and syncs.</p></details>
+    <details><summary>Do I need a smartphone?</summary><p>Yes, any Android phone or iPhone with a browser. It installs from the web page — no Play Store needed.</p></details>
+    <details><summary>Can my workers use it?</summary><p>Yes. Give each worker an invite code and they set their own 4-digit PIN. They only see their shop and never your buying prices or profit.</p></details>
+    <details><summary>Is my data safe?</summary><p>Your records are saved on your phone and backed up to a secure server. Edits keep a full history, so nothing is silently changed.</p></details>
+    <details><summary>Can I use it in Swahili?</summary><p>Yes. The whole app works in English and Swahili, and voice entry understands both, including common Sheng number words.</p></details>
+    <details><summary>How do I pay?</summary><p>Chapa Kazi costs KSh 50 a day, KSh 300 a week or KSh 1,200 a month. Message us on WhatsApp and we'll set you up and show you how to pay.</p></details>
+    <details><summary>I have more than one shop.</summary><p>An owner can have several businesses in one account and compare them side by side.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Your shop deserves better <em>than a notebook.</em></h2>
+    <p>Start today and see your real numbers by tonight.</p>
+    <div class="cta-row center">
+      <a class="btn btn-light" data-app href="#">Get the app <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost-d" data-wa href="#">WhatsApp us</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top"><img src="logo.svg" alt="" width="30" height="30"><span>chapa<b>kazi</b></span></a>
+    <p>Hustle smarter, not harder.</p>
+    <p class="mono small">© <span id="yr"></span> CHAPA KAZI · MADE IN KENYA · POWERED BY TRILLIONAIRE DESIGNS</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
