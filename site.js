@@ -48,9 +48,9 @@ links.addEventListener("click", function () {
 
 // Pricing toggle
 var PLANS = {
-  day:   { kick: "PAY AS YOU GO", amt: "49",    per: "/ day",   note: "Pay only for the days you need." },
-  week:  { kick: "SAVE KSH 44",   amt: "299",   per: "/ week",  note: "Save KSh 44 every week against daily." },
-  month: { kick: "BEST VALUE",    amt: "1,199", per: "/ month", note: "Under KSh 40 a day. Save KSh 271 against daily." }
+  day:   { kick: "PAY AS YOU GO", amt: "49",    per: "/ day",   note: "Pay only for the days you need.", extra: "for your first shop · + KSh 29 / day for each extra shop" },
+  week:  { kick: "SAVE KSH 44",   amt: "299",   per: "/ week",  note: "Save KSh 44 every week against daily.", extra: "for your first shop · + KSh 179 / week for each extra shop" },
+  month: { kick: "BEST VALUE",    amt: "1,199", per: "/ month", note: "Under KSh 40 a day. Save KSh 271 against daily.", extra: "for your first shop · + KSh 699 / month for each extra shop" }
 };
 var tabs = document.querySelectorAll(".toggle button");
 tabs.forEach(function (b) {
@@ -61,6 +61,7 @@ tabs.forEach(function (b) {
     document.getElementById("p-amt").textContent = p.amt;
     document.getElementById("p-per").textContent = p.per;
     document.getElementById("p-note").textContent = p.note;
+    document.getElementById("p-extra").textContent = p.extra;
   });
 });
 

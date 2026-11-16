@@ -20,8 +20,9 @@
 - Languages: English and Swahili, including voice entry that understands Swahili, English and common Sheng number words.
 - Works offline: everything is saved on the phone first, then backed up and synced to a secure server when online.
 - Payments: record cash, M-Pesa and credit sales; a shop can have its M-Pesa Till or Paybill connected so payments arrive in the app.
-- Price (Kenyan shillings, all features included in every plan, no contract): KSh 49 per day, KSh 299 per week, KSh 1,199 per month (under KSh 40 a day).
-- How to get started and pay: message on WhatsApp +254 182 319 029 (0182319029).
+- Price (Kenyan shillings, all features included in every plan, no contract): KSh 49 per day, KSh 299 per week, KSh 1,199 per month for the first shop (under KSh 40 a day), plus KSh 29 per day, KSh 179 per week or KSh 699 per month for each extra shop. Plans by shop count: Starter 1 shop, Growth 2-3, Business 4-5, Enterprise 6+. 14 days free for new owners.
+- How to pay: inside the app with M-Pesa (STK Push prompt on the phone).
+- Help getting started: message on WhatsApp +254 182 319 029 (0182319029).
 - Website: https://chapabiz.co.ke/
 
 ## Features
@@ -47,7 +48,7 @@
 - Do I need a smartphone? Yes, any Android phone or iPhone with a browser.
 - Is my data safe? Records are stored on the phone and backed up to a secure server, with full edit history.
 - Can workers use it? Yes, with an invite code and their own PIN.
-- How much is it? KSh 49 a day, KSh 299 a week or KSh 1,199 a month.
+- How much is it? KSh 49 a day, KSh 299 a week or KSh 1,199 a month for the first shop; each extra shop KSh 29 a day, KSh 179 a week or KSh 699 a month.
 
 ## Pages
 

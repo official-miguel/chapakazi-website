@@ -149,6 +149,8 @@ h3{font-size:21px;font-weight:600;letter-spacing:-.02em;line-height:1.2;margin-b
 .amt{font-size:84px;font-weight:700;line-height:1;letter-spacing:-.05em}
 .per{color:var(--mut);font-size:19px}
 .price-note{color:var(--mut);font-size:15px;margin:6px 0 4px}
+.price-extra{font-size:15px;font-weight:600;margin:0 0 4px}
+.compare-plans{margin-top:10px}
 .fine{font-size:14px;color:var(--mut);margin-top:16px}
 .compare{display:flex;justify-content:center;gap:12px 26px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin-top:34px}
 
